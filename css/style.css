@@ -7,6 +7,10 @@ a{
     text-decoration: none;
 }
 
+.header, .sub-header, .content, .leyend{
+    padding-left: 100px;
+    padding-right: 100px;
+}
 
 /*************** Especific style***************/
 
@@ -15,18 +19,15 @@ body{
     flex-direction: column;
 }
 
-
+/************headers section************/
 .header{
     display:flex;
     background-color: #1f2937;
     height: 60px;
     width: auto;
-    color: aliceblue;
-    font-size: 14px;
-    justify-content: flex-start;
-    padding: 10px;
+    justify-content: space-between;
     align-items: center;
-    gap:20px;    
+    padding-top: 10px;
 }
 
 .header a {
@@ -34,17 +35,173 @@ body{
     align-items: flex-end;
 }
 
-.logo-left{
-    font-size: 25px;
-    margin: 15px;
-  }
 
-.header-s2{
+.header-left{
     display:flex;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.header-right{
+display: flex;
+justify-content: flex-end;
+gap: 40px;
+}
+
+.sub-header{
+    display:flex;
+    background-color: #1f2937;
+    height: 300px;
+    width: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;   
+    gap:50px;
+   }
+
+.sign{
+    background-color: #3882f6;
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 10px;
+    width: 100px;
+    height: 20px;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.sub-header-l{
+    display: flex;
+    flex-direction: column;
+    color: rgb(243, 233, 215);
+    width: 50%;
+}
+
+.sub-header-r{
+    display: flex;
+    width: 50%;
+    flex-direction: row-reverse;
+    color:white;
+    
+}
+.sub-header-r img{
+    height: 300px;
+    width: 450px;
+   
+}
+
+
+.logo {
+    
+    font-size: 45px;
+    font-weight: bold;
+}
+
+/*********************** Content section*/
+
+.content{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-top: 40px;
+    align-items: center;
+    gap: 50px;
+}
+
+.content-body{
+    display: flex;
+    gap: 20px;
+      
+}
+
+.card{
+    display:flex;
+    flex-direction: column;
+    border-radius: 8px;
+    width: 150px;
+    padding: 8px;
+    align-items: center;
+    gap:15px;
+
+}
+
+.card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    border: 2px solid #3882f6;    
+}
+
+/********* leyend*****/
+
+.leyend{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: auto;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: #E5E7EB;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+#odin{
+    align-self: flex-end;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/***********    div insist sing up   *-*********/
+
+.insist{
+   height: 100px;
+   width: 800px;
+   background-color: #3882f6; 
+   align-items: center;
+   align-self: center; 
+   margin-top: 100px;
+   margin-bottom: 100px;
+   border-radius: 10px;
+   display:flex;
+   color:white;
+   padding-top: 20px;
+   padding-left: 50px;
+   padding-right: 50px;
+   padding-bottom: 20px;
+   justify-content: space-between;
+}
+
+#go{
+    font-weight: bold;
+}
+
+#insist-sing{
+    border-radius: 8px;
+    border: 2px solid white;
+    color:white;
+    padding: 10px;
+    
+}
+
+/********   footer  *******/
+
+.footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     background-color: #1f2937;
     height: 50px;
     width: auto;
-    color: aliceblue;
-    font-size: 48px;
-    font-weight: bolder;
-}
+    padding-top: 10px;
+    padding-bottom: 10px;   
+    color:white;
+    font-size: 10px;
+ }
